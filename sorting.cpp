@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int main(int argc, char const *argv[])
 {
     int n;
@@ -16,17 +15,17 @@ int main(int argc, char const *argv[])
         {
             if (arr[j]<arr[i])
             {
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
+                int temp = arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
             }
             
         }
+        
     }
-
     for (int i = 0; i < n; i++)
     {
-        cout<<arr[i]<<" ";
+        cout<<arr[i]<<" "; 
     }
     
     
